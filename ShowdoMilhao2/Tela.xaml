@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowdoMilhao2.Tela.xaml">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>           
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+                <Image Source="showdomilhao.png"
+                Aspect="Fill"
+                Grid.RowSpan="8"
+                Grid.ColumnSpan="3"/>
+                
+                <Label Text="Pergunta"
+                Margin="5"
+                TextColor="White"
+                FontSize="12"
+                Grid.Row="1"
+                Grid.ColumnSpan="3"/>
+
+                <Button Text="A"
+                Margin="65"
+                Grid.Row="2"
+                Grid.Column="3"
+                BorderColor="White"
+                BorderWidth="2"
+                CornerRadius="20"
+                BackgroundColor="Purple"
+                TextColor="White"
+                FontSize="10"/>
+
+                <Button Text="B"
+                Margin="65"
+                Grid.Row="3"
+                Grid.Column="3"
+                BorderColor="White"
+                BorderWidth="2"
+                CornerRadius="20"
+                BackgroundColor="Purple"
+                TextColor="White"
+                FontSize="10"/>
+
+                <Button Text="C"
+                Margin="65"
+                Grid.Row="4"
+                Grid.Column="3"
+                BorderColor="White"
+                BorderWidth="2"
+                CornerRadius="20"
+                BackgroundColor="Purple"
+                TextColor="White"
+                FontSize="10"/>
+
+                <Button Text="D"
+                Margin="65"
+                Grid.Row="5"
+                Grid.Column="3"
+                BorderColor="White"
+                BorderWidth="2"
+                CornerRadius="20"
+                BackgroundColor="Purple"
+                TextColor="White"
+                FontSize="10"/>
+
+                <Button Text="E"
+                Margin="65"
+                Grid.Row="6"
+                Grid.Column="3"
+                BorderColor="White"
+                BorderWidth="2"
+                CornerRadius="20"
+                BackgroundColor="Purple"
+                TextColor="White"
+                FontSize="10"/>
+
+                <Button Text="Cartas"
+                Margin="65"
+                Grid.Row="7"
+                Grid.Column="0"
+                BorderColor="White"
+                BorderWidth="2"
+                CornerRadius="20"
+                BackgroundColor="Purple"
+                TextColor="White"
+                FontSize="10"/>
+
+                <Button Text="Retirar 1 errado"
+                Margin="65"
+                Grid.Row="7"
+                Grid.Column="1"
+                BorderColor="White"
+                BorderWidth="2"
+                CornerRadius="20"
+                BackgroundColor="Purple"
+                TextColor="White"
+                FontSize="10"/>
+
+                <Button Text="Universitários"
+                Margin="65"
+                Grid.Row="7"
+                Grid.Column="2"
+                BorderColor="White"
+                BorderWidth="2"
+                CornerRadius="20"
+                BackgroundColor="Purple"
+                TextColor="White"
+                FontSize="10"/>
+
+
+    </Grid>
+
+
+</ContentPage>
