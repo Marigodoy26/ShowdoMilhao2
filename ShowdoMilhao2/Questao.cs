@@ -3,11 +3,11 @@ namespace ShowdoMilhao2
   public class Questao
   {
     public string Pergunta;
-    public string Resposta1;
-    public string Resposta2;
-    public string Resposta3;
-    public string Resposta4;
-    public string Resposta5;
+    public string Resposta01;
+    public string Resposta02;
+    public string Resposta03;
+    public string Resposta04;
+    public string Resposta05;
     public int RespostaCerta;
     public int RespostaIncorreta;
     public int Nivel;
@@ -41,11 +41,11 @@ namespace ShowdoMilhao2
     public void Desenhar ()
     {
         labelPergunta.Text= Pergunta;
-        btResposta01.Text= Resposta1;
-        btResposta02.Text= Resposta2;
-        btResposta03.Text= Resposta3;
-        btResposta04.Text= Resposta4;
-        btResposta05.Text= Resposta5;
+        btResposta01.Text= Resposta01;
+        btResposta02.Text= Resposta02;
+        btResposta03.Text= Resposta03;
+        btResposta04.Text= Resposta04;
+        btResposta05.Text= Resposta05;
     }
     public Questao (Label LP, Button bt01, Button bt02, Button bt03, Button bt04, Button bt05)
     {
