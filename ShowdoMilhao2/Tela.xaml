@@ -12,7 +12,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>           
+            <RowDefinition Height="*"/>
+             <RowDefinition Height="*"/>           
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -21,22 +22,23 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-                <Image Source="showdomilhao.png"
+                <Image Source="showdomilhaotela.png"
                 Aspect="Fill"
-                Grid.RowSpan="8"
+                Grid.RowSpan="9"
                 Grid.ColumnSpan="3"/>
                 
-                <Label Text="Pergunta"
+                <Label Text="Pergunta:"
                 Margin="5"
                 TextColor="White"
-                FontSize="12"
-                Grid.Row="1"
+                FontSize="18"
+                Grid.Row="2"
                 Grid.ColumnSpan="3"/>
 
                 <Button Text="A"
-                Margin="65"
-                Grid.Row="2"
-                Grid.Column="3"
+                Clicked="ButtonA"
+                Margin="5,10,5,10"
+                Grid.Row="3"
+                Grid.ColumnSpan="3"
                 BorderColor="White"
                 BorderWidth="2"
                 CornerRadius="20"
@@ -45,9 +47,10 @@
                 FontSize="10"/>
 
                 <Button Text="B"
-                Margin="65"
-                Grid.Row="3"
-                Grid.Column="3"
+                Clicked="ButtonB"
+                Margin="5,10,5,10"
+                Grid.Row="4"
+                Grid.ColumnSpan="3"
                 BorderColor="White"
                 BorderWidth="2"
                 CornerRadius="20"
@@ -56,9 +59,10 @@
                 FontSize="10"/>
 
                 <Button Text="C"
-                Margin="65"
-                Grid.Row="4"
-                Grid.Column="3"
+                Clicked="ButtonC"
+                Margin="5,10,5,10"
+                Grid.Row="5"
+                Grid.ColumnSpan="3"
                 BorderColor="White"
                 BorderWidth="2"
                 CornerRadius="20"
@@ -67,9 +71,10 @@
                 FontSize="10"/>
 
                 <Button Text="D"
-                Margin="65"
-                Grid.Row="5"
-                Grid.Column="3"
+                Clicked="ButtonD"
+                Margin="5,10,5,10"
+                Grid.Row="6"
+                Grid.ColumnSpan="3"
                 BorderColor="White"
                 BorderWidth="2"
                 CornerRadius="20"
@@ -78,9 +83,10 @@
                 FontSize="10"/>
 
                 <Button Text="E"
-                Margin="65"
-                Grid.Row="6"
-                Grid.Column="3"
+                Clicked="ButtonE"
+                Margin="5,10,5,10"
+                Grid.Row="7"
+                Grid.ColumnSpan="3"
                 BorderColor="White"
                 BorderWidth="2"
                 CornerRadius="20"
@@ -89,37 +95,40 @@
                 FontSize="10"/>
 
                 <Button Text="Cartas"
-                Margin="65"
-                Grid.Row="7"
+                Clicked="ButtonCartas"
+                Margin="5,10,5,10"
+                Grid.Row="9"
                 Grid.Column="0"
                 BorderColor="White"
                 BorderWidth="2"
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="10"/>
+                FontSize="18"/>
 
                 <Button Text="Retirar 1 errado"
-                Margin="65"
-                Grid.Row="7"
+                Clicked="Button1Errado"
+                Margin="5,10,5,10"
+                Grid.Row="9"
                 Grid.Column="1"
                 BorderColor="White"
                 BorderWidth="2"
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="10"/>
+                FontSize="15"/>
 
                 <Button Text="Universitários"
-                Margin="65"
-                Grid.Row="7"
+                Clicked="ButtonUni"
+                Margin="5,10,5,10"
+                Grid.Row="9"
                 Grid.Column="2"
                 BorderColor="White"
                 BorderWidth="2"
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="10"/>
+                FontSize="18"/>
 
 
     </Grid>

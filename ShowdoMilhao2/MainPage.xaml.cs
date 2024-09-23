@@ -6,7 +6,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
-	private void Começar (object sender, EventArgs e)
+	private void Comecar (object sender, EventArgs e)
 	{
 		Application.Current.MainPage= new Tela();
 	}

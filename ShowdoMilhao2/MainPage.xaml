@@ -16,14 +16,14 @@
 
                 <Button Text="Começar"
                 Clicked="Comecar"
-                Margin="65"
+                Margin="60"
                 Grid.Row="2"
                 BorderColor="White"
                 BorderWidth="2"
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="10"/>
+                FontSize="25"/>
 
 
     </Grid>

@@ -5,6 +5,8 @@ public class Gerenciador
     List<Questao> ListaQuestoes = new List<Questao>();
     List<int> ListaQuestoesRepondidas = new List<int>();
     Questao QuestaoCorrente;
+    public int Pontuação {get; private set;}
+    int NivelAtual=0;
 
     public Gerenciador(Label labelPergunta, Button BtnResp1, Button BtnResp2, Button BtnResp3, Button BtnResp4, Button BtnResp5)
     {
@@ -130,13 +132,20 @@ public class Gerenciador
         if (QuestaoCorrente.VerificaResposta(RespostaRepondida))
         {
             await Task.Delay(1000);
+            AdicionaPontuacao(NivelAtual);
+            NivelAtual++;
             ProximaQuestao();
+        }
+        else
+        {
+            await App.Current.MainPage.DisplayAlert("Fim", "Você errou", "ok");
+            Inicializar();
         }
     }
 
     void ProximaQuestao()
     {
-        var rumAceat = Random.Shared.Next(0, ListaQuestoes.Count);
+        var rumAleat = Random.Shared.Next(0, ListaQuestoes.Count);
         while (ListaQuestoesRepondidas.Contains(rumAleat))
             rumAleat = Random.Shared.Next(0, ListaQuestoes.Count);
 
@@ -144,5 +153,35 @@ public class Gerenciador
         QuestaoCorrente = ListaQuestoes[rumAleat];
         QuestaoCorrente.Desenhar();
     }
+        void Inicializar()
+        {
+            Pontuação=0;
+            NivelAtual=1;
+            ProximaQuestao();
+        }
 
+        void AdicionaPontuacao(int n)
+        {
+            if(n==1)
+            Pontuação=1000;
+            else if(n==2)
+            Pontuação=2000;
+            else if(n==3)
+            Pontuação=5000;
+            else if(n==4)
+            Pontuação=410000;
+            else if(n==5)
+            Pontuação=20000;
+            else if(n==6)
+            Pontuação=50000;
+            else if(n==7)
+            Pontuação=100000;
+            else if(n==8)
+            Pontuação=200000;
+            else if(n==9)
+            Pontuação=500000;
+            else Pontuação=1000000;
+        }
 }
+
+
