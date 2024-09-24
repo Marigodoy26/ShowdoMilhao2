@@ -6,10 +6,14 @@ public partial class Tela : ContentPage
 	public Tela()
 	{
 		InitializeComponent();
-		gerenciador= new Gerenciador (labelPergunta:, A, B, C, D, E);
+		gerenciador= new Gerenciador (LP, btResp1, btResp2, btResp3, btResp4, btResp5, labelPontuacao, labelNivel);
 	}
 
-	 void ButtonB(object sender, EventArgs args)
+	  void ButtonA(object sender, EventArgs args)
+        {
+            gerenciador.VerificarCerta(1);
+        }
+     void ButtonB(object sender, EventArgs args)
         {
             gerenciador.VerificarCerta(2);
         }
@@ -28,5 +32,4 @@ public partial class Tela : ContentPage
         {
             gerenciador.VerificarCerta(5);
         }
-
 }

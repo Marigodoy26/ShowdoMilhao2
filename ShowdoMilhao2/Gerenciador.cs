@@ -7,10 +7,14 @@ public class Gerenciador
     Questao QuestaoCorrente;
     public int Pontuação {get; private set;}
     int NivelAtual=0;
+    Label labelPontuacao;
+    Label labelNivel;
 
-    public Gerenciador(Label labelPergunta, Button BtnResp1, Button BtnResp2, Button BtnResp3, Button BtnResp4, Button BtnResp5)
+    public Gerenciador(Label labelPergunta, Button BtnResp1, Button BtnResp2, Button BtnResp3, Button BtnResp4, Button BtnResp5, Label labelPontuacao, Label labelNivel)
     {
         CriarPergunta(labelPergunta, BtnResp1, BtnResp2, BtnResp3, BtnResp4, BtnResp5);
+        this.labelPontuacao=labelPontuacao;
+        this.labelNivel=labelNivel;
     }
 
 
@@ -129,6 +133,8 @@ public class Gerenciador
     }
     public async void VerificarCerta(int RespostaRepondida)
     {
+        labelPontuacao.Text="Pontuação: R$"+labelPontuacao.ToString();
+        labelNivel.Text="Nível:"+NivelAtual.ToString();
         if (QuestaoCorrente.VerificaResposta(RespostaRepondida))
         {
             await Task.Delay(1000);

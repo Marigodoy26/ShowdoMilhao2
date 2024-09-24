@@ -12,24 +12,24 @@ namespace ShowdoMilhao2
     public int RespostaIncorreta;
     public int Nivel;
 
-    private Label labelPergunta;
-    private Button btResposta01;
-    private Button btResposta02;
-    private Button btResposta03;
-    private Button btResposta04;
-    private Button btResposta05;
+    private Label LP;
+    private Button btResp1;
+    private Button btResp2;
+    private Button btResp3;
+    private Button btResp4;
+    private Button btResp5;
     private Button QualBtn(int rr)
     {
         if (rr ==1)
-          return btResposta01;
+          return btResp1;
         else if (rr ==2)
-          return btResposta02;
+          return btResp2;
         else if (rr ==3)
-          return btResposta03; 
+          return btResp3; 
         else if (rr ==4)
-          return btResposta04;
+          return btResp4;
         else if (rr ==5)
-          return btResposta05;
+          return btResp5;
         else 
         return null; 
     }
@@ -41,29 +41,29 @@ namespace ShowdoMilhao2
     public void Desenhar ()
     {
         labelPergunta.Text= Pergunta;
-        btResposta01.Text= Resposta01;
-        btResposta02.Text= Resposta02;
-        btResposta03.Text= Resposta03;
-        btResposta04.Text= Resposta04;
-        btResposta05.Text= Resposta05;
+        btResp1.Text= Resposta01;
+        btResp2.Text= Resposta02;
+        btResp3.Text= Resposta03;
+        btResp4.Text= Resposta04;
+        btResp5.Text= Resposta05;
     }
     public Questao (Label LP, Button bt01, Button bt02, Button bt03, Button bt04, Button bt05)
     {
         labelPergunta=LP;
-        btResposta01= bt01;
-        btResposta02= bt02;
-        btResposta03= bt03;
-        btResposta04= bt04;
-        btResposta05= bt05;
+        btResp1= bt01;
+        btResp2= bt02;
+        btResp3= bt03;
+        btResp4= bt04;
+        btResp5= bt05;
     }
      public void ConfiguraDesenho (Label LP, Button bt01, Button bt02, Button bt03, Button bt04, Button bt05)
     {
         labelPergunta=LP;
-        btResposta01= bt01;
-        btResposta02= bt02;
-        btResposta03= bt03;
-        btResposta04= bt04;
-        btResposta05= bt05;
+        btResp1= bt01;
+        btResp2= bt02;
+        btResp3= bt03;
+        btResp4= bt04;
+        btResp5= bt05;
     }
 
     public bool VerificaResposta (int RespostaRespondida)

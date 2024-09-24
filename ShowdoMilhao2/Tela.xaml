@@ -27,14 +27,29 @@
                 Grid.RowSpan="9"
                 Grid.ColumnSpan="3"/>
                 
-                <Label Text="Pergunta:"
+                <Label x:Name="LP"
                 Margin="5"
                 TextColor="White"
                 FontSize="18"
                 Grid.Row="2"
-                Grid.ColumnSpan="3"/>
+                Grid.ColumnSpan="1"/>
 
-                <Button Text="A"
+                <Label x:Name="labelPontuacao"
+                Margin="5"
+                TextColor="White"
+                FontSize="18"
+                Grid.Row="2"
+                Grid.ColumnSpan="0"/>
+
+                <Label x:Name="labelNivel"
+                Margin="5"
+                TextColor="White"
+                FontSize="18"
+                Grid.Row="2"
+                Grid.ColumnSpan="2"/>
+
+
+                <Button x:Name="btResp1"
                 Clicked="ButtonA"
                 Margin="5,10,5,10"
                 Grid.Row="3"
@@ -46,7 +61,7 @@
                 TextColor="White"
                 FontSize="10"/>
 
-                <Button Text="B"
+                <Button x:Name="btResp2"
                 Clicked="ButtonB"
                 Margin="5,10,5,10"
                 Grid.Row="4"
@@ -58,7 +73,7 @@
                 TextColor="White"
                 FontSize="10"/>
 
-                <Button Text="C"
+                <Button x:Name="btResp3"
                 Clicked="ButtonC"
                 Margin="5,10,5,10"
                 Grid.Row="5"
@@ -70,7 +85,7 @@
                 TextColor="White"
                 FontSize="10"/>
 
-                <Button Text="D"
+                <Button x:Name="btResp4"
                 Clicked="ButtonD"
                 Margin="5,10,5,10"
                 Grid.Row="6"
@@ -82,7 +97,7 @@
                 TextColor="White"
                 FontSize="10"/>
 
-                <Button Text="E"
+                <Button x:Name="btResp5"
                 Clicked="ButtonE"
                 Margin="5,10,5,10"
                 Grid.Row="7"
@@ -94,8 +109,7 @@
                 TextColor="White"
                 FontSize="10"/>
 
-                <Button Text="Cartas"
-                Clicked="ButtonCartas"
+                <Button x:Name="Cartas"
                 Margin="5,10,5,10"
                 Grid.Row="9"
                 Grid.Column="0"
@@ -106,8 +120,7 @@
                 TextColor="White"
                 FontSize="18"/>
 
-                <Button Text="Retirar 1 errado"
-                Clicked="Button1Errado"
+                <Button x:Name="Retirar 1 errado"
                 Margin="5,10,5,10"
                 Grid.Row="9"
                 Grid.Column="1"
@@ -118,8 +131,7 @@
                 TextColor="White"
                 FontSize="15"/>
 
-                <Button Text="Universitários"
-                Clicked="ButtonUni"
+                <Button x:Name="Universitários"
                 Margin="5,10,5,10"
                 Grid.Row="9"
                 Grid.Column="2"
