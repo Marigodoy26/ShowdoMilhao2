@@ -13,7 +13,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-             <RowDefinition Height="*"/>           
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>           
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -24,45 +25,35 @@
 
                 <Image Source="showdomilhaotela.png"
                 Aspect="Fill"
-                Grid.RowSpan="9"
+                Grid.RowSpan="10"
                 Grid.ColumnSpan="3"/>
                 
-                <Label x:Name="LP"
+                <Label x:Name="labelPergunta"
                 Margin="5"
                 TextColor="White"
                 FontSize="18"
-                Grid.Row="2"
-                Grid.ColumnSpan="1"/>
+                Grid.Row="3"
+                Grid.Column="0"/>
 
                 <Label x:Name="labelPontuacao"
+                Text="Pontuação"
                 Margin="5"
                 TextColor="White"
                 FontSize="18"
                 Grid.Row="2"
-                Grid.ColumnSpan="0"/>
+                Grid.Column="0"/>
 
                 <Label x:Name="labelNivel"
+                Text="Nível"
                 Margin="5"
                 TextColor="White"
                 FontSize="18"
                 Grid.Row="2"
-                Grid.ColumnSpan="2"/>
+                Grid.Column="2"/>
 
 
                 <Button x:Name="btResp1"
                 Clicked="ButtonA"
-                Margin="5,10,5,10"
-                Grid.Row="3"
-                Grid.ColumnSpan="3"
-                BorderColor="White"
-                BorderWidth="2"
-                CornerRadius="20"
-                BackgroundColor="Purple"
-                TextColor="White"
-                FontSize="10"/>
-
-                <Button x:Name="btResp2"
-                Clicked="ButtonB"
                 Margin="5,10,5,10"
                 Grid.Row="4"
                 Grid.ColumnSpan="3"
@@ -71,10 +62,10 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="10"/>
+                FontSize="30"/>
 
-                <Button x:Name="btResp3"
-                Clicked="ButtonC"
+                <Button x:Name="btResp2"
+                Clicked="ButtonB"
                 Margin="5,10,5,10"
                 Grid.Row="5"
                 Grid.ColumnSpan="3"
@@ -83,10 +74,10 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="10"/>
+                FontSize="30"/>
 
-                <Button x:Name="btResp4"
-                Clicked="ButtonD"
+                <Button x:Name="btResp3"
+                Clicked="ButtonC"
                 Margin="5,10,5,10"
                 Grid.Row="6"
                 Grid.ColumnSpan="3"
@@ -95,10 +86,10 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="10"/>
+                FontSize="30"/>
 
-                <Button x:Name="btResp5"
-                Clicked="ButtonE"
+                <Button x:Name="btResp4"
+                Clicked="ButtonD"
                 Margin="5,10,5,10"
                 Grid.Row="7"
                 Grid.ColumnSpan="3"
@@ -107,9 +98,22 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="10"/>
+                FontSize="30"/>
 
-                <Button x:Name="Cartas"
+                <Button x:Name="btResp5"
+                Clicked="ButtonE"
+                Margin="5,10,5,10"
+                Grid.Row="8"
+                Grid.ColumnSpan="3"
+                BorderColor="White"
+                BorderWidth="2"
+                CornerRadius="20"
+                BackgroundColor="Purple"
+                TextColor="White"
+                FontSize="30"/>
+
+                <Button
+                Text="Cartas"
                 Margin="5,10,5,10"
                 Grid.Row="9"
                 Grid.Column="0"
@@ -120,7 +124,8 @@
                 TextColor="White"
                 FontSize="18"/>
 
-                <Button x:Name="Retirar 1 errado"
+                <Button 
+                Text="Elimina 1"
                 Margin="5,10,5,10"
                 Grid.Row="9"
                 Grid.Column="1"
@@ -131,7 +136,8 @@
                 TextColor="White"
                 FontSize="15"/>
 
-                <Button x:Name="Universitários"
+                <Button 
+                Text="Universitários"
                 Margin="5,10,5,10"
                 Grid.Row="9"
                 Grid.Column="2"
@@ -140,7 +146,7 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="18"/>
+                FontSize="15"/>
 
 
     </Grid>

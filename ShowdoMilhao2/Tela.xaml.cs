@@ -6,7 +6,7 @@ public partial class Tela : ContentPage
 	public Tela()
 	{
 		InitializeComponent();
-		gerenciador= new Gerenciador (LP, btResp1, btResp2, btResp3, btResp4, btResp5, labelPontuacao, labelNivel);
+		gerenciador= new Gerenciador (labelPergunta, btResp1, btResp2, btResp3, btResp4, btResp5, labelPontuacao, labelNivel);
 	}
 
 	  void ButtonA(object sender, EventArgs args)

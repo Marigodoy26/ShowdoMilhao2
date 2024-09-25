@@ -12,7 +12,7 @@ namespace ShowdoMilhao2
     public int RespostaIncorreta;
     public int Nivel;
 
-    private Label LP;
+    private Label labelPergunta;
     private Button btResp1;
     private Button btResp2;
     private Button btResp3;
@@ -46,6 +46,17 @@ namespace ShowdoMilhao2
         btResp3.Text= Resposta03;
         btResp4.Text= Resposta04;
         btResp5.Text= Resposta05;
+
+        btResp1!.BackgroundColor=Color.FromArgb("#710691");
+        btResp1!.TextColor=Colors.Black;
+        btResp2!.BackgroundColor=Color.FromArgb("#710691");
+        btResp2!.TextColor=Colors.Black;
+        btResp3!.BackgroundColor=Color.FromArgb("#710691");
+        btResp3!.TextColor=Colors.Black;
+        btResp4!.BackgroundColor=Color.FromArgb("#710691");
+        btResp4!.TextColor=Colors.Black;
+        btResp5!.BackgroundColor=Color.FromArgb("#710691");
+        btResp5!.TextColor=Colors.Black;
     }
     public Questao (Label LP, Button bt01, Button bt02, Button bt03, Button bt04, Button bt05)
     {
