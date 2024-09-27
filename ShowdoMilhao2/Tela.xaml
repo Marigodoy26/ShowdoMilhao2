@@ -62,7 +62,7 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="30"/>
+                FontSize="25"/>
 
                 <Button x:Name="btResp2"
                 Clicked="ButtonB"
@@ -74,7 +74,7 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="30"/>
+                FontSize="25"/>
 
                 <Button x:Name="btResp3"
                 Clicked="ButtonC"
@@ -86,7 +86,7 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="30"/>
+                FontSize="25"/>
 
                 <Button x:Name="btResp4"
                 Clicked="ButtonD"
@@ -98,7 +98,7 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="30"/>
+                FontSize="25"/>
 
                 <Button x:Name="btResp5"
                 Clicked="ButtonE"
@@ -110,7 +110,7 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="30"/>
+                FontSize="25"/>
 
                 <Button
                 Text="Cartas"
