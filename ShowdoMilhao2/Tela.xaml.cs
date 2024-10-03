@@ -32,4 +32,20 @@ public partial class Tela : ContentPage
         {
             gerenciador.VerificarCerta(5);
         }
+
+    void OnAjudaRetirarClicked(Object S, EventArgs e)
+        {
+            var ajuda=new RetiraErrada();
+            ajuda.ConfiguraDesenho(btResp1, btResp2, btResp3, btResp4, btResp5);
+            ajuda.RealizaAjuda(gerenciador.GetQuestaoCorrente());
+            (S as Button).IsVisible=false;
+
+        }
+
+        void OnAjudaPulaClicked(object s, EventArgs e)
+        {
+            gerenciador.ProximaQuestao();
+            (s as Button).IsVisible=false;
+        }
+
 }

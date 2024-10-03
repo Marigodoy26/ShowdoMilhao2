@@ -661,7 +661,7 @@ public class Gerenciador
         }
     }
 
-    void ProximaQuestao()
+    public void ProximaQuestao()
     {
         var rumAleat = Random.Shared.Next(0, ListaQuestoes.Count);
         while (ListaQuestoesRepondidas.Contains(rumAleat))
@@ -700,6 +700,12 @@ public class Gerenciador
             Pontuacao = 500000;
         else Pontuacao = 1000000;
     }
+
+    public Questao GetQuestaoCorrente()
+    {
+        return QuestaoCorrente;
+    }
+
 }
 
 

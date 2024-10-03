@@ -5,30 +5,36 @@ public class RetiraErrada : IAjuda
     {
         switch (questao.RespostaCerta)
         {
-        case1:
-        BtnResp02.IsVisible = false;
-        BtnResp04.IsVisible = false;
-        BtnResp05.IsVisible = false;
+        case 1:
+        Resposta02.IsVisible = false;
+        Resposta04.IsVisible = false;
+        Resposta05.IsVisible = false;
+        break;
 
-    case2:
-        BtnResp01.IsVisible = false;
-        BtnResp03.IsVisible = false;
-        BtnResp04.IsVisible = false;
+    case 2:
+        Resposta01.IsVisible = false;
+        Resposta03.IsVisible = false;
+        Resposta04.IsVisible = false;
+        break;
 
-    case3:
-        BtnResp01.IsVisible = false;
-        BtnResp04.IsVisible = false;
-        BtnResp05.IsVisible = false;
+    case 3:
+        Resposta01.IsVisible = false;
+        Resposta04.IsVisible = false;
+        Resposta05.IsVisible = false;
+        break;
 
-    case4:
-        BtnResp02.IsVisible = false;
-        BtnResp01.IsVisible = false;
-        BtnResp05.IsVisible = false;
+    case 4:
+        Resposta02.IsVisible = false;
+        Resposta05.IsVisible = false;
+        Resposta05.IsVisible = false;
+        break;
 
-    case5:
-        BtnResp01.IsVisible = false;
-        BtnResp02.IsVisible = false;
-        BtnResp04.IsVisible = false;
+    case 5:
+        Resposta05.IsVisible = false;
+        Resposta02.IsVisible = false;
+        Resposta04.IsVisible = false;
+        break;
+
     }
 }
 }

@@ -30,10 +30,11 @@
                 
                 <Label x:Name="labelPergunta"
                 Margin="5"
+                HorizontalOptions="Center"
                 TextColor="White"
                 FontSize="18"
                 Grid.Row="3"
-                Grid.Column="0"/>
+                Grid.ColumnSpan="3"/>
 
                 <Label x:Name="labelPontuacao"
                 Text="Pontuação"
@@ -62,7 +63,7 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="25"/>
+                FontSize="22"/>
 
                 <Button x:Name="btResp2"
                 Clicked="ButtonB"
@@ -74,7 +75,7 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="25"/>
+                FontSize="22"/>
 
                 <Button x:Name="btResp3"
                 Clicked="ButtonC"
@@ -86,7 +87,7 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="25"/>
+                FontSize="22"/>
 
                 <Button x:Name="btResp4"
                 Clicked="ButtonD"
@@ -98,7 +99,7 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="25"/>
+                FontSize="22"/>
 
                 <Button x:Name="btResp5"
                 Clicked="ButtonE"
@@ -110,10 +111,10 @@
                 CornerRadius="20"
                 BackgroundColor="Purple"
                 TextColor="White"
-                FontSize="25"/>
+                FontSize="22"/>
 
                 <Button
-                Text="Cartas"
+                Text="Pula"
                 Margin="5,10,5,10"
                 Grid.Row="9"
                 Grid.Column="0"
@@ -125,7 +126,7 @@
                 FontSize="18"/>
 
                 <Button 
-                Text="Elimina 1"
+                Text="Elimina 3"
                 Margin="5,10,5,10"
                 Grid.Row="9"
                 Grid.Column="1"
