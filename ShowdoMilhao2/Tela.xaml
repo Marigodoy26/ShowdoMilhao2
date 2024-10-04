@@ -115,6 +115,7 @@
 
                 <Button
                 Text="Pula"
+                Clicked="OnAjudaPulaClicked"
                 Margin="5,10,5,10"
                 Grid.Row="9"
                 Grid.Column="0"
@@ -127,6 +128,7 @@
 
                 <Button 
                 Text="Elimina 3"
+                Clicked="OnAjudaRetirarClicked"
                 Margin="5,10,5,10"
                 Grid.Row="9"
                 Grid.Column="1"

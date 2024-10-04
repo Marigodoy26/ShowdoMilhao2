@@ -5,8 +5,8 @@ namespace ShowdoMilhao2
 
     public bool Equals(Questao q)
     {
-      return this.Nivel == q.Nivel &&
-      this.Pergunta == q.Pergunta;
+      return this.Nivel==q.Nivel &&
+      this.Pergunta==q.Pergunta;
     }
 
     public string Pergunta;
@@ -53,6 +53,12 @@ namespace ShowdoMilhao2
       btResp3.Text = Resposta03;
       btResp4.Text = Resposta04;
       btResp5.Text = Resposta05;
+
+      btResp1.IsVisible=true;
+      btResp2.IsVisible=true;
+      btResp3.IsVisible=true;
+      btResp4.IsVisible=true;
+      btResp5.IsVisible=true;
 
       btResp1!.BackgroundColor = Color.FromArgb("#710691");
       btResp1!.TextColor = Colors.White;
